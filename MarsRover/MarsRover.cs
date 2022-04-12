@@ -12,4 +12,30 @@ public class MarsRover
         Y = y;
         Direction = dir;
     }
+
+    public void MoveForward(char command)
+    {
+        switch (Direction)
+        {
+            case 'N':
+                Y++;
+                break;
+            case 'S':
+                Y--;
+                break;
+            case 'E':
+                X++;
+                break;
+            case 'W':
+                X--;
+                break;
+            default:
+                break;
+        }
+    }
+
+    public void MoveBackwards(char command)
+    {
+        Y--;
+    }
 }
